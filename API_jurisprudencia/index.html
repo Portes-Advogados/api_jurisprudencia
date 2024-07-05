@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Consulta de Jurisprudências</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Consulta de Jurisprudências</h1>
+    <form id="searchForm">
+      <label for="estado">Estado:</label>
+      <select id="estado" required>
+        <option value="MS">Mato Grosso do Sul</option>
+        <option value="MT">Mato Grosso</option>
+        <option value="BR">Brasil</option>
+      </select>
+      <label for="dataInicio">Data de Início:</label>
+      <input type="date" id="dataInicio" required>
+      <label for="dataFim">Data de Fim:</label>
+      <input type="date" id="dataFim" required>
+      <button type="submit">Pesquisar</button>
+    </form>
+    <div id="results"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
